@@ -10,9 +10,10 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "Feature"
+		features = "C:\\Users\\Mahesh Kumar\\selenium-workspace\\ToolsQASeleniumBDD\\Feature"
 		,glue= {"stepDefinition"}
-		,plugin = {"pretty","html:C:target\\site"}
+		,plugin = {"pretty","html:target/cucumber-reports"}
+		,monochrome = true
 		)
 public class TestRunner {
 	
